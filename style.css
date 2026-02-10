@@ -1,0 +1,106 @@
+body{
+margin:0;
+font-family:Trebuchet MS;
+background:black;
+color:white;
+text-align:center;
+}
+
+/* LOADER */
+#loader{
+position:fixed;
+inset:0;
+background:black;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+.sigil{
+width:60px;
+height:60px;
+border:2px solid darkred;
+border-radius:50%;
+animation:spin 1.5s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* LANDING */
+.landing{
+height:100vh;
+background:url("wallpaper.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.hidden{display:none;}
+
+.main-logo{width:140px;}
+.form-logo{width:90px;}
+
+.glow{
+color:#b00000;
+text-shadow:0 0 12px #600;
+}
+
+.btn,.btn-outline,.btn-submit{
+padding:12px 25px;
+margin:10px;
+border:1px solid #700;
+color:white;
+text-decoration:none;
+background:#700;
+}
+
+.btn-outline{background:none;}
+.btn:hover,.btn-outline:hover,.btn-submit:hover{background:#c00000;}
+
+.lang-select{
+background:black;
+color:white;
+margin:15px;
+}
+
+/* RITUAL STYLE */
+.ritual{
+border:1px solid #500;
+background:#0b0b0b;
+box-shadow:0 0 20px #300 inset;
+}
+
+.question-box{
+border:1px solid #600;
+margin:20px 0;
+padding:15px;
+}
+
+.question-box h2{
+color:#c00000;
+letter-spacing:2px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:6px 0;
+background:#111;
+border:1px solid #333;
+color:white;
+}
+
+.form-box,.success-box,.disclaimer-box{
+max-width:520px;
+margin:40px auto;
+padding:25px;
+}
+
+.glow-border{
+border:1px solid #700;
+box-shadow:0 0 15px #500;
+}
+
+@media(max-width:600px){
+.main-logo{width:110px;}
+}
